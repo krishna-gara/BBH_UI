@@ -43,6 +43,7 @@ libraryDependencies ++= {
   )
 }
 dependencyOverrides += "org.webjars.npm" % "minimatch" % "3.0.0"
+libraryDependencies += "com.typesafe.sbt" % "sbt-launcher" % "0.13.6"
 typingsFile := Some(baseDirectory.value / "typings" / "index.d.ts")
 // use the webjars npm directory (target/web/node_modules ) for resolution of module imports of angular2/core etc
 resolveFromWebjarsNodeModulesDir := true
