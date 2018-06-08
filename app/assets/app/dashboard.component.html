@@ -1,0 +1,231 @@
+<div class="PagetabData">
+<fieldset class="scheduler-border">
+  <legend class="scheduler-border"> Swift Message {{date}}</legend>
+  <form #heroForm="ngForm">
+    <div class="row">
+      <div class='col-sm-4'>
+        <label for="fee" style="margin:0px;display:inline;">Receive Fee</label>
+        <div class="input-group">
+          <input type="text" class="form-control" style="width:100px;" id="fee" name="fee" [(ngModel)]="model.fee"
+                 #fee="ngModel"
+                 [ngClass]="{'red-border-class': ( fee.errors),'green-border-class':( fee.valid && fee.dirty)}"
+                 value="540" placeholder="Filter by Receive Fee" required/>
+        </div>
+      </div>
+      <div class='col-sm-4'>
+        <label for="From">From</label>
+        <input type="date" class="form-control" style="width:180px;" id="from" name="from" [(ngModel)]="model.from"
+               #from="ngModel" required minlength="4" maxlength="15" placeholder="Filter by From"
+               [ngClass]="{'red-border-class': from.errors}"/>
+      </div>
+      <div class='col-sm-2'>
+        <label for="To">To</label>
+        <input type="date" class="form-control" id="user_title" style="width:180px;" name="to" id="to" size="30"
+               [(ngModel)]="model.to" #to="ngModel" required minlength="4" maxlength="15" placeholder="Filter by To"
+               [ngClass]="{'red-border-class': to.errors}"/>
+      </div>
+      <div class="col-sm-2" style="margin-top:15px">
+        <button id="buid" (click)="searchRequest(heroForm.value)" name="buid" class="btn btn-sm btn-default graybtn pull-right">SEARCH</button>
+      </div>
+    </div>
+  </form>
+</fieldset>
+<fieldset class="scheduler-border">
+  <legend class="scheduler-border">Incoming Messages</legend>
+  <table class="table table dataTable table-striped table-bordered table-responsive" role="grid"
+         style="width: 100%;margin:0px">
+    <thead>
+    <tr role="row">
+      <th>Function(23G)</th>
+      <th>Trading Date(98A)</th>
+      <th>Instrument(35B)</th>
+      <th>Quantity(36B)</th>
+      <th>Seller(95R)</th>
+      <th>Buyer(95P)</th>
+      <th>Settlement Place(36B)</th>
+      <th>Parse</th>
+      <th>Download</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr
+      *ngFor="let message of messages | filter : 'send_RECIEVE_STATUS' : 'I' | paginate: { itemsPerPage: 4, currentPage: p,id: 'first' } ">
+      <td>{{message.newg_23G}}</td>
+      <td>{{message.trad_98A}}</td>
+      <td>{{message.isin_35B}}</td>
+      <td>{{message.fiac_36B}}</td>
+      <td>{{message.seller_95R}}</td>
+      <td>{{message.deag_95P}}</td>
+      <td>{{message.settlement_place_36B}}</td>
+      <td align="center"><span (click)="validationdata(message);staticModal.show();"
+                [ngClass]="(Cssdisabled) ? 'glyphicon glyphicon-retweet' : 'glyphicon glyphicon-retweet' "></span></td>
+      <td align="center"><span style="color:red;" class="glyphicon glyphicon-download-alt"
+                (click)="downLoadAsFile(message.swift_MESSAGE, 'SWIFTMessage.txt','text/txt');"></span></td>
+    </tr>
+	<tr *ngIf="messages?.length == 0">
+		<td colspan="10" style="color:red;text-align:center"> No Incoming messages found...</td>
+	</tr>
+    <pagination-controls id="first" (pageChange)="p = $event" #api></pagination-controls>
+    </tbody>
+  </table>
+</fieldset>
+
+
+<fieldset class="scheduler-border">
+
+  <legend class="scheduler-border">Outgoing Messages</legend>
+  <table class="table dataTable table-striped table-bordered" role="grid" style="width: 100%;margin:0px">
+    <thead>
+    <tr role="row">
+      <th>Function(23G)</th>
+      <th>Trading Date(98A)</th>
+      <th>Instrument(35B)</th>
+      <th>Quantity(36B)</th>
+      <th>Seller(95R)</th>
+      <th>Buyer(95P)</th>
+      <th>Settlement Place(95P)</th>
+      <th>Parse</th>
+      <th>Download</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr
+      *ngFor="let messageout of messages | filter : 'send_RECIEVE_STATUS' : 'O' | paginate: { itemsPerPage: 4, currentPage: o,id: 'second' } ">
+      <td>{{messageout.newg_23G}}</td>
+      <td>{{messageout.trad_98A}}</td>
+      <td>{{messageout.isin_35B}}</td>
+      <td>{{messageout.fiac_36B}}</td>
+      <td>{{messageout.seller_95R}}</td>
+      <td>{{messageout.deag_95P}}</td>
+      <td>{{messageout.settlement_place_36B}}</td>
+      <td align="center"><span (click)="validationdata(messageout);staticModal.show();"
+                [ngClass]="(Cssdisabled) ? 'glyphicon glyphicon-retweet' : 'glyphicon glyphicon-retweet' "></span></td>
+      <td align="center"><span style="color:red;" class="glyphicon glyphicon-download-alt"
+                (click)="downLoadAsFile(messageout.swift_MESSAGE, 'SWIFTMessageOut.txt','text/txt');"></span></td>
+    </tr>
+    <pagination-controls id="second" (pageChange)="o = $event" #api1></pagination-controls>
+    </tbody>
+
+  </table>
+</fieldset>
+<div class="col-sm-12">
+  <div class="col-sm-3"></div>
+  <div class="col-sm-6" >
+    <span *ngFor="let details of processDetails">
+        <div><span class="glyphicon glyphicon-ok-sign text-success"></span>{{details}}</div>
+      </span>
+  </div>
+  <div class="col-sm-3"></div>
+</div>
+<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog"
+     aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">MT 540 Message</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="modal-content">
+      <h4>Header Block</h4>
+      <fieldset class="scheduler-border">
+        <legend class="scheduler-border">Message Information</legend>
+        <div class="row">
+          <div class="col-md-6"><span>Application ID</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.applicationId"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Service ID</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.serviceId"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Logical terminal</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.logicalTerminal"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Session number</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.sessionNumber"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Sequence number </span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.sequenceNumber"></span></div>
+        </div>
+      </fieldset>
+      <h4>Application Header</h4>
+
+      <fieldset class="scheduler-border">
+        <legend class="scheduler-border">Message Information</legend>
+        <div class="row">
+          <div class="col-md-6"><span>Message Type</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.messageType"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Receiver's address</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.receiverAddress"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Message priority</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.messagePriority"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Delivery monitoring</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.deliveryMonitoring"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Obsolescence period</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.obsolescencePeriod"></span></div>
+        </div>
+      </fieldset>
+
+      <h4>User Header</h4>
+      <fieldset class="scheduler-border">
+        <legend class="scheduler-border">Message Information</legend>
+        <div class="row">
+          <div class="col-md-6"><span>Message Type</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.Block_119"></span></div>
+        </div>
+      </fieldset>
+
+
+      <h4>Message</h4>
+      <fieldset class="scheduler-border">
+        <legend class="scheduler-border">Message</legend>
+        <div class="row">
+          <div class="col-md-6"><span> Function (23G)</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.MessageFunction23G"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Trading Date(98A)</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.TradingDate98A"></span></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6"><span>Instrument(35B)</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.instrument_35B"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Quantity(36B)</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.quantity_36B"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Seller(95R)</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.seller_95R"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Buyer(95P)</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.buyer_95P"></span></div>
+        </div>
+        <div class="row">
+          <div class="col-md-6"><span>Settlement Place(95P)</span></div>
+          <div class="col-md-6"><span *ngIf="upload" [innerText]="upload.settlement_place_36B"></span></div>
+        </div>
+
+      </fieldset>
+      <h4>Trailer</h4>
+    </div>
+  </div>
+</div>
+</div>

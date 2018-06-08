@@ -1,0 +1,332 @@
+<div class="PagetabData">
+<form>
+	<div class='row' style="margin-top:10px;margin-bottom:0px">
+		<div class="col-md-12">
+				<label class="btn btn-default graybtn pull-right" for="uploadfilemsg" style="padding: 5px!important;">
+					<input type="file" id="uploadfilemsg" class="btn btn-success" value="Upload Swift Message"  style="width:180px;margin-top:30px;" (change)="onChange($event);uploadFile();" >
+					<!--<span  type="submit" style="color:red;" class="glyphicon glyphicon-download-alt" (click)="uploadSwiftmsgClass()">&nbsp;</span> -->
+					Upload Swift Message
+				</label>
+		</div>
+		<div class="col-md-12">
+			<div class="col-sm-4"></div>
+			<div class="col-sm-4 alert alert-danger text-center" *ngIf="showErrMsg">Swift message not valid.</div>
+			<div class="col-sm-4"></div>
+		</div>
+	</div>
+ </form>
+<form #heroForm="ngForm" >
+<fieldset class="scheduler-border">
+    <legend class="scheduler-border">Message Information</legend>
+		<div class='row'>
+            <div class='col-sm-6'>
+                <div class='form-group'>
+                    <div class="col-sm-4 padding0"><label for="user_lastname">Message Function [23G]</label></div>
+                    <div class="col-sm-8">
+                    <input type="text" class="form-control" style="width:180px;" id="MessageFunction23G" name="MessageFunction23G" *ngIf="upload"    [(ngModel)]="upload.MessageFunction23G" #MessageFunction23G="ngModel" required [ngClass]="{'red-border-class': (MessageFunction23G.touched || MessageFunction23G.dirty) && MessageFunction23G.invalid}"
+                    />
+                    </div>
+                </div>
+            </div>
+            <div class='col-sm-6'>
+                <div class='form-group'>
+                    <div class="col-sm-4 padding0"><label for="user_lastname">Sender reference [20C]</label></div>
+                    <div class="col-sm-5">
+                    <input type="text" class="form-control" style="width:180px;" id="SenderReference20C" name="SenderReference20C" [(ngModel)]="upload.SenderReference20C" #SenderReference20C="ngModel" required [ngClass]="{'red-border-class': (SenderReference20C.touched || SenderReference20C.dirty) && SenderReference20C.invalid}" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+</fieldset>
+
+<fieldset class="scheduler-border">
+    <legend class="scheduler-border">Trading Details</legend>
+    <div class="row">
+        <div class='col-sm-6'>
+                <div class="col-sm-4 padding0"><label for="user_tradingNumberCount99B">Instrument[35B]</label></div>
+                <div class="col-sm-5 ">
+                   <input type="text" class="form-control" style="width:180px;" id="Instrument35B" name="Instrument35B" [(ngModel)]="upload.Instrument35B" #Instrument35B="ngModel" required [ngClass]="{'red-border-class': (Instrument35B.touched || Instrument35B.dirty) && Instrument35B.invalid}" />
+                </div>
+        </div>
+        <div class='col-sm-6'>
+            <div class="col-sm-4 padding0"><label for="user_tradingNumberCount99B">Instrument Type[12A]</label></div>
+                <div class="col-sm-5 ">
+                    <input type="text" class="form-control" style="width:180px;" id="InstrumentType12A" name="InstrumentType12A" [(ngModel)]="upload.InstrumentType12A" #InstrumentType12A="ngModel" required [ngClass]="{'red-border-class': (InstrumentType12A.touched || InstrumentType12A.dirty) && InstrumentType12A.invalid}" />
+                </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class='col-sm-6'>
+                <div class="col-sm-4 padding0"><label for="user_tradingNumberCount99B">Trading Date [98A]</label></div>
+                <div class="col-sm-5 ">
+                   <input type="date" class="form-control" style="width:180px;" id="TradingDate98A" name="TradingDate98A" [(ngModel)]="upload.TradingDate98A" #TradingDate98A="ngModel" required [ngClass]="{'red-border-class': (TradingDate98A.touched || TradingDate98A.dirty) && TradingDate98A.invalid}" />
+                </div>
+        </div>
+        <div class='col-sm-6'>
+            <div class='form-group'>
+                    <div class="col-sm-4 padding0"><label for="user_tradingNumberCount99B">Currency[11A]</label></div>
+                    <div class="col-sm-5">
+                    <input type="text" class="form-control" style="width:180px;" id="Currency11A" name="Currency11A" [(ngModel)]="upload.Currency11A" #Currency11A="ngModel" required [ngClass]="{'red-border-class': (Currency11A.touched || Currency11A.dirty) && Currency11A.invalid}" />
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class='form-group'>
+                <div class="col-xs-4 padding0"><label for="user_tradingNumberCount99B">Settlement Date [98A]</label></div>
+                <div class="col-xs-5 ">
+                <input type="date" class="form-control" style="width:180px;" id="SettlementDate98A" name="SettlementDate98A" [(ngModel)]="upload.SettlementDate98A" #SettlementDate98A="ngModel" required [ngClass]="{'red-border-class': (SettlementDate98A.touched || SettlementDate98A.dirty) && SettlementDate98A.invalid}" />
+                </div>
+            </div>
+        </div>
+		<div class='col-sm-6'>
+            <div class='form-group'>
+                    <div class="col-sm-4 padding0"><label for="user_tradingNumberCount99B">Date Of Issue[98A]</label></div>
+                    <div class="col-sm-5">
+                    <input type="date" class="form-control" style="width:180px;" id="DateOfIssue98A" name="DateOfIssue98A" [(ngModel)]="upload.DateOfIssue98A" #DateOfIssue98A="ngModel" required [ngClass]="{'red-border-class': (DateOfIssue98A.touched || DateOfIssue98A.dirty) && DateOfIssue98A.invalid}" />
+                    </div>
+                </div>
+        </div>
+    </div>
+	<div class="row">
+        <div class='col-sm-6'>
+            <div class='form-group'>
+                <div class="col-xs-4 padding0"><label for="user_tradingNumberCount99B">Quantity[36B]</label></div>
+                <div class="col-xs-5 ">
+                <input type="text" class="form-control" style="width:180px;" id="Quantity36B" name="Quantity36B" [(ngModel)]="upload.Quantity36B" #Quantity36B="ngModel" required [ngClass]="{'red-border-class': (Quantity36B.touched || Quantity36B.dirty) && Quantity36B.invalid}" />
+                </div>
+            </div>
+        </div>
+
+		<div class='col-sm-6'>
+            <div class='form-group'>
+                    <div class="col-sm-4 padding0"><label for="user_tradingNumberCount99B">Maturity Date[98A]</label></div>
+                    <div class="col-sm-5">
+                    <input type="date" class="form-control" style="width:180px;" id="DateOfMaturity98A" name="DateOfMaturity98A" [(ngModel)]="upload.DateOfMaturity98A" #DateOfMaturity98A="ngModel" required [ngClass]="{'red-border-class': (DateOfMaturity98A.touched || DateOfMaturity98A.dirty) && DateOfMaturity98A.invalid}" />
+                    </div>
+                </div>
+        </div>
+
+	</div>
+</fieldset>
+
+
+<fieldset class="scheduler-border">
+<legend class="scheduler-border">Settlement Details</legend>
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class='form-group'>
+                <div class="col-xs-4 padding0"><label for="user_settlementtype">Transaction Type [22F]</label></div>
+                <div class="col-xs-5">
+                <input type="text" class="form-control" style="width:180px;" id="TransactionType22F" name="TransactionType22F" [(ngModel)]="upload.TransactionType22F" #TransactionType22F="ngModel" required [ngClass]="{'red-border-class': (TransactionType22F.touched || TransactionType22F.dirty) && TransactionType22F.invalid}" />
+                </div>
+            </div>
+        </div>
+        <div class='col-sm-6'>
+            <div class='form-group'>
+                <div class="col-xs-4 padding0"><label for="user_settlementtype">Delivery Agent [95P]</label></div>
+                <div class="col-xs-5">
+                <input type="text" class="form-control" style="width:180px;" id="DeliveryAgent95P" name="DeliveryAgent95P" [(ngModel)]="upload.DeliveryAgent95P" #DeliveryAgent95P="ngModel" required [ngClass]="{'red-border-class': (DeliveryAgent95P.touched || DeliveryAgent95P.dirty) && DeliveryAgent95P.invalid}" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class='form-group'>
+                <div class="col-xs-4 padding0"><label for="user_settlementtype">Seller [95R]</label></div>
+                <div class="col-xs-5">
+                <input type="text" class="form-control" style="width:180px;" id="Seller95R" name="Seller95R" [(ngModel)]="upload.Seller95R" #Seller95R="ngModel" required [ngClass]="{'red-border-class': (Seller95R.touched || Seller95R.dirty) && Seller95R.invalid}" />
+                </div>
+            </div>
+        </div>
+        <div class='col-sm-6'>
+            <div class='form-group'>
+                <div class="col-xs-4 padding0"><label for="user_settlementtype">Safe Keeping Agent [97A]</label></div>
+                <div class="col-xs-5">
+                <input type="text" class="form-control" style="width:180px;" id="SafeKeepingAgent97A" name="SafeKeepingAgent97A" [(ngModel)]="upload.SafeKeepingAgent97A" #SafeKeepingAgent97A="ngModel" required [ngClass]="{'red-border-class': (SafeKeepingAgent97A.touched || SafeKeepingAgent97A.dirty) && SafeKeepingAgent97A.invalid}" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class='form-group'>
+                <div class="col-xs-4 padding0"><label for="user_settlementtype">Settlement Amount[36B]</label></div>
+                <div class="col-xs-5">
+                <input type="text" class="form-control" style="width:180px;" id="SettlementAmount36B" name="SettlementAmount36B" [(ngModel)]="upload.SettlementAmount36B" #SettlementAmount36B="ngModel" required [ngClass]="{'red-border-class': (SettlementAmount36B.touched || SettlementAmount36B.dirty) && SettlementAmount36B.invalid}" />
+                </div>
+            </div>
+        </div>
+		<div class='col-sm-6'>
+            <div class='form-group'>
+                <div class="col-xs-3 padding0"><label for="user_settlementtype">Settlement Type[22F]</label></div>
+                <div class="col-xs-5">
+                <input type="text" class="form-control" style="width:180px;" id="TransactionTypeCola22F" name="TransactionTypeCola22F" [(ngModel)]="upload.TransactionTypeCola22F" #TransactionTypeCola22F="ngModel" required [ngClass]="{'red-border-class': (TransactionTypeCola22F.touched || TransactionTypeCola22F.dirty) && TransactionTypeCola22F.invalid}" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</fieldset>
+
+<div class="row">
+	<div class="form-group">
+		<label class="col-sm-1 control-label" for="button1id"></label>
+		<div class="col-sm-3">
+      <input type="hidden" id="incomingMsg" name="incomingMsg" [(ngModel)]="upload.incomingMsg" #incomingMsg="ngModel" />
+      <button id="button2id" (click)="verifyMessage(heroForm.value);staticModal.show();" name="button2id" [ngClass]="(Cssdisabled) ? 'btn btn-success' : 'btn btn-danger' " title="Please verify before validate message">Verify</button>
+      <button id="button1id" name="button1id" class="" [disabled]="(parserbuttondisabled) ? false : true" block (click)="validateMessage(heroForm.value);staticModalValidate.show();" [ngClass]="(parserCssdisabled) ? 'btn btn-success' : 'btn btn-danger' " title="Please validate before save message">Validate</button>
+		</div>
+    <div class="col-sm-6" >
+      <span *ngFor="let details of processDetails">
+        <div><span class="glyphicon glyphicon-ok-sign text-success"></span>{{details}}</div>
+      </span>
+    </div>
+    <div class="col-sm-2" style="text-align:right" >
+      <button id="button2id" name="button2id" [disabled]="!createbuttondisabled" block (click)="saveMessage(heroForm.value);" class="btn btn-success">Save</button>
+    </div>
+	</div>
+</div>
+
+<div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">MT 540 Message</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+	  <h4>Header Block</h4>
+	  <fieldset class="scheduler-border">
+			<legend class="scheduler-border">Message Information</legend>
+			<div class="row">
+				<div class="col-md-6"><span>Application ID</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.applicationId"></span></div >
+			</div>
+			<div class="row"><div class="col-md-6"><span>Service ID</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.serviceId"></span></div >
+			</div>
+			<div class="row"><div class="col-md-6"><span>Logical terminal</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.logicalTerminal"></span></div >
+			</div>
+			<div class="row"><div class="col-md-6"><span>Session number</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.sessionNumber"></span></div >
+			</div>
+			<div class="row"><div class="col-md-6"><span>Sequence number </span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.sequenceNumber"></span></div >
+			</div>
+		</fieldset>
+	  <h4>Application Header Block</h4>
+
+	  <fieldset class="scheduler-border">
+			<legend class="scheduler-border">Message Information</legend>
+			<div class="row">
+				<div class="col-md-6"><span>Message Type</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.messageType"></span></div >
+			</div>
+			<div class="row"><div class="col-md-6"><span>Receiver's address</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.receiverAddress"></span></div >
+			</div>
+			<div class="row"><div class="col-md-6"><span>Message priority</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.messagePriority"></span></div >
+			</div>
+			<div class="row"><div class="col-md-6"><span>Delivery monitoring</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.deliveryMonitoring"></span></div >
+			</div>
+			<div class="row"><div class="col-md-6"><span>Obsolescence period</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.obsolescencePeriod"></span></div >
+			</div>
+		</fieldset>
+
+	   <h4>User Header</h4>
+	   <fieldset class="scheduler-border">
+			<legend class="scheduler-border">Message Information</legend>
+			<div class="row">
+				<div class="col-md-6"><span>Message Type</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.Block_119"></span></div >
+			</div>
+		</fieldset>
+		<h4>Message</h4>
+		<fieldset class="scheduler-border">
+			<legend class="scheduler-border">Message Information</legend>
+			<div class="row"><div class="col-md-6"><span>Message Function [23G]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.MessageFunction23G"></span></div >		</div>
+			<div class="row"><div class="col-md-6"><span>Sender reference [20C]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.SenderReference20C"></span></div >		</div>
+
+		</fieldset>
+		<fieldset class="scheduler-border">
+			<legend class="scheduler-border">Trading Details</legend>
+			<div class="row"><div class="col-md-6"><span>Instrument [35B]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.Instrument35B"></span></div >		</div>
+			<div class="row"><div class="col-md-6"><span>Trading Date [98A]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.TradingDate98A"></span></div >		</div>
+			<div class="row"><div class="col-md-6"><span>Settlement Date [98A]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.SettlementDate98A"></span></div >		</div>
+			<div class="row"><div class="col-md-6"><span>Quantity [36B]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.Quantity36B"></span></div ></div>
+			<div class="row"><div class="col-md-6"><span>Instrument Type [12A]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.InstrumentType12A"></span></div ></div>
+			<div class="row"><div class="col-md-6"><span>Currency [11A]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.Currency11A"></span></div ></div>
+			<div class="row"><div class="col-md-6"><span>Date Of Issue [98A]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.DateOfIssue98A"></span></div ></div>
+		</fieldset>
+
+		<fieldset class="scheduler-border">
+			<legend class="scheduler-border">Settlement Details</legend>
+			<div class="row"><div class="col-md-6"><span>Transaction Type [22F]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.TransactionType22F"></span></div >		</div>
+			<div class="row"><div class="col-md-6"><span>Seller [95R]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.Seller95R"></span></div >		</div>
+			<div class="row">
+				<div class="col-md-6"><span>Settlement Amount [36B]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.SettlementAmount36B"></span></div >
+			</div>
+			<div class="row">
+				<div class="col-md-6"><span>Delivery Agent [95P]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.DeliveryAgent95P"></span></div >
+			</div>
+			<div class="row">
+				<div class="col-md-6"><span>Safe Keeping Agent [97A]</span></div><div class="col-md-6"><span *ngIf="upload" [innerText]="upload.SafeKeepingAgent97A"></span></div >
+			</div>
+
+		</fieldset>
+
+		<h4>Trailer</h4>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" bsModal #staticModalValidate="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">MT 540 Validation</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModalValidate.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<div class="row">
+			<div class="row">
+					<div class="col-md-12 text-center"><span [innerText]="valModel.validateMsg"></span></div>
+			</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" bsModal #staticModalCreate="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-md">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">MT 540 Creation</h4>
+        <button type="button" class="close pull-right" aria-label="Close" (click)="staticModalCreate.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<div class="row">
+			<div class="row">
+					<div class="col-md-12 text-center"><span [innerText]="valModel.validateMsg"></span></div>
+			</div>
+        </div>
+       </div>
+  </div>
+</div>
+</div>
+
+</form>
+</div>

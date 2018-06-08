@@ -1,0 +1,29 @@
+
+  <div class="pull-left col-sm-12 logo">	
+		<img src ="/assets/images/bbh-logo-data.png"/>	
+  </div>
+  <div class="InnerContainer">
+	  <h5 *ngIf='showMsgCreate' style="color:red;font-weight:bold;text-align:center">Invalid User Name & Password</h5>		  
+
+	  <form #loginForm="ngForm" >
+		  
+		  <div class="col-sm-12 field-wrap">
+			<label>
+				<span class="req" placeholder="UserName*"></span>
+			</label>
+			<h5>Username</h5>
+			<input type="text" class="form-control" id="username" name="username" *ngIf="login" [(ngModel)]="login.username" #username="ngModel" [ngClass]="{'red-border-class': (username.touched || username.dirty) && username.invalid }" required autocomplete="off">	
+		  </div>
+
+		  <div class="col-sm-12 field-wrap">
+			<label>
+			   <span class="req" placeholder="Password*"></span>
+			</label>
+			<h5>Password</h5>
+			<input type="password"  class="form-control" id="password" name="password" *ngIf="login" [(ngModel)]="login.password" [(ngModel)]="login.password" #password="ngModel" required [ngClass]="{'red-border-class': (password.touched || password.dirty) && password.invalid }"  required autocomplete="off">
+		  </div>
+		<div class="col-sm-12 margin5tb">
+		  <button type="submit" class="btn btn-primary btn-md pull-right" (click)="validate(loginForm.value)">Get Started</button>
+		  </div>
+	  </form>
+	</div>

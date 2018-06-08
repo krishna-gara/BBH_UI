@@ -1,0 +1,1779 @@
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[[32msuccess[0m] Compiled in 509ms
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+4 day/s left for this license.
+4 day/s left for this license.
+4 day/s left for this license.
+[[32msuccess[0m] Compiled in 127ms
+[[32msuccess[0m] Compiled in 113ms
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[[32msuccess[0m] Compiled in 460ms
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+4 day/s left for this license.
+4 day/s left for this license.
+[[31merror[0m] - application - 
+
+! @74am38idb - Internal server error, for (POST) [/searchQuery] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.NullPointerException: null
+	at controllers.Application.searchQuery(Application.java:525)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(Routes.scala:302)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(Routes.scala:302)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+4 day/s left for this license.
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[0m[[0minfo[0m] [0mUpdating {file:/usr/share/conductr/project/BBH_UI/}root...[0m
+[[32msuccess[0m] Compiled in 1s
+[0m[[0minfo[0m] [0mDone updating.[0m
+[0m[[33mwarn[0m] [0mScala version was updated by one of library dependencies:[0m
+[0m[[33mwarn[0m] [0m	* org.scala-lang:scala-library:(2.11.8, 2.11.7, 2.11.6) -> 2.11.11[0m
+[0m[[33mwarn[0m] [0mTo force scalaVersion, add the following:[0m
+[0m[[33mwarn[0m] [0m	ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }[0m
+[0m[[33mwarn[0m] [0mRun 'evicted' to see detailed eviction warnings[0m
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+3 day/s left for this license.
+3 day/s left for this license.
+[[31merror[0m] - application - 
+
+! @74b2d5bj1 - Internal server error, for (POST) [/searchQuery] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[NullPointerException: null]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.NullPointerException: null
+	at controllers.Application.searchQuery(Application.java:524)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(Routes.scala:302)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$8$$anonfun$apply$8.apply(Routes.scala:302)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+[[32msuccess[0m] Compiled in 230ms
+[[32msuccess[0m] Compiled in 92ms
+[[32msuccess[0m] Compiled in 89ms
+[[32msuccess[0m] Compiled in 96ms
+[0m[[0minfo[0m] [0mCompiling 1 Java source to /usr/share/conductr/project/BBH_UI/target/scala-2.11/classes...[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Login.java:80: variable str is already defined in method authenticate()[0m
+[0m[[31merror[0m] [0m    String str = "";[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Login.java: /usr/share/conductr/project/BBH_UI/app/controllers/Login.java uses unchecked or unsafe operations.[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Login.java: Recompile with -Xlint:unchecked for details.[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) javac returned nonzero exit code[0m
+[0m[[0minfo[0m] [0mCompiling 1 Java source to /usr/share/conductr/project/BBH_UI/target/scala-2.11/classes...[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Login.java: /usr/share/conductr/project/BBH_UI/app/controllers/Login.java uses unchecked or unsafe operations.[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Login.java: Recompile with -Xlint:unchecked for details.[0m
+[[32msuccess[0m] Compiled in 578ms
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[[32msuccess[0m] Compiled in 542ms
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+*******compugain@bbh
+[[32msuccess[0m] Compiled in 169ms
+[0m[[0minfo[0m] [0mTypescript compiling on 1 source(s)[0m
+[0m[[31merror[0m] [0mtsconfig.json:1: TS6053 File '/usr/share/conductr/project/BBH_UI/typings/index.d.ts' not found.[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/dashboard.component.ts:6: TS2307 Cannot find module 'angular2/common'.[0m
+[0m[[31merror[0m] [0mimport { NgFor, NgModel} from 'angular2/common';[0m
+[0m[[31merror[0m] [0m                              ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/dashboard.component.ts:9: TS2305 Module '"/usr/share/conductr/project/BBH_UI/target/web/node-modules/main/webjars/@angular/router/index"' has no exported member 'ROUTER_PROVIDERS'.[0m
+[0m[[31merror[0m] [0mimport {Router,ROUTER_PROVIDERS } from '@angular/router';[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/dashboard.component.ts:21: TS2304 Cannot find name 'heroForm'.[0m
+[0m[[31merror[0m] [0m    ngForm : heroForm;[0m
+[0m[[31merror[0m] [0m             ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/dashboard.component.ts:38: TS2346 Supplied parameters do not match any signature of call target.[0m
+[0m[[31merror[0m] [0m          this.model = new Validate('');[0m
+[0m[[31merror[0m] [0m                       ^[0m
+[0m[[31merror[0m] [0m34 errors found[0m
+[0m[[31merror[0m] [0m(web-assets:[31mtypescript[0m) com.typesafe.sbt.web.CompileProblemsException[0m
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+
+[35m--- (RELOAD) ---[0m
+
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+3 day/s left for this license.
+*******compugain@bbh
+*******compugain@bbh
+[[32msuccess[0m] Compiled in 117ms
+[0m[[0minfo[0m] [0mCompiling 4 Scala sources and 1 Java source to /usr/share/conductr/project/BBH_UI/target/scala-2.11/classes...[0m
+[0m[[0minfo[0m] [0mCompiling 2 Java sources to /usr/share/conductr/project/BBH_UI/target/scala-2.11/classes...[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Login.java: /usr/share/conductr/project/BBH_UI/app/controllers/Login.java uses unchecked or unsafe operations.[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Login.java: Recompile with -Xlint:unchecked for details.[0m
+[[32msuccess[0m] Compiled in 7s
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+
+[35m--- (RELOAD) ---[0m
+
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+*******compugain@bbh
+*******compugain@bbh
+*******compugain@bbh
+*******compugain@bbh
+*******compugain@bbh
+*******compugain@bbh
+*******compugain@bbh
+3 day/s left for this license.
+3 day/s left for this license.
+3 day/s left for this license.
+3 day/s left for this license.
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[[32msuccess[0m] Compiled in 532ms
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+1 day/s left for this license.
+1 day/s left for this license.
+[[32msuccess[0m] Compiled in 193ms
+[[32msuccess[0m] Compiled in 122ms
+[[32msuccess[0m] Compiled in 122ms
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[[32msuccess[0m] Compiled in 448ms
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+*******compugain@bbh
+1 day/s left for this license.
+1 day/s left for this license.
+1 day/s left for this license.
+*******compugain@bbh
+*******compugain@bbh
+1 day/s left for this license.
+*******compugain@bbh
+1 day/s left for this license.
+1 day/s left for this license.
+*******compugain@bbh
+*******compugain@bbh
+*******compugain@bbh
+*******compugain@bbh
+1 day/s left for this license.
+1 day/s left for this license.
+1 day/s left for this license.
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[0m[[0minfo[0m] [0mCompiling 1 Java source to /usr/share/conductr/project/BBH_UI/target/scala-2.11/classes...[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Application.java: /usr/share/conductr/project/BBH_UI/app/controllers/Application.java uses or overrides a deprecated API.[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Application.java: Recompile with -Xlint:deprecation for details.[0m
+[[32msuccess[0m] Compiled in 2s
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[[32msuccess[0m] Compiled in 621ms
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+*******compugain@bbh
+*******compugain@bbh
+[[31merror[0m] - application - 
+
+! @74dfkdd0c - Internal server error, for (POST) [/uploadSwiftFile] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.uploadSwiftFile(Application.java:157)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 61 common frames omitted
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[[32msuccess[0m] Compiled in 502ms
+[0m[[0minfo[0m] [0mTypescript compiling on 26 source(s)[0m
+[0m[[31merror[0m] [0mtsconfig.json:1: TS6053 File '/usr/share/conductr/project/BBH_UI/typings/index.d.ts' not found.[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:8: TS2307 Cannot find module 'ng2-bootstrap'.[0m
+[0m[[31merror[0m] [0mimport { ModalModule,AlertModule,DatepickerModule} from 'ng2-bootstrap';[0m
+[0m[[31merror[0m] [0m                                                        ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:9: TS2305 Module '"/usr/share/conductr/project/BBH_UI/target/web/node-modules/main/webjars/ng2-pagination/index"' has no exported member 'PaginationControlsCmp'.[0m
+[0m[[31merror[0m] [0mimport { Ng2PaginationModule,PaginatePipe, PaginationControlsCmp, PaginationService} from 'ng2-pagination';[0m
+[0m[[31merror[0m] [0m                                           ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:10: TS2305 Module '"/usr/share/conductr/project/BBH_UI/target/web/node-modules/main/webjars/@angular/router/index"' has no exported member 'RouteConfig'.[0m
+[0m[[31merror[0m] [0mimport {RouteConfig, Router, ROUTER_PROVIDERS} from '@angular/router';[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:10: TS2305 Module '"/usr/share/conductr/project/BBH_UI/target/web/node-modules/main/webjars/@angular/router/index"' has no exported member 'ROUTER_PROVIDERS'.[0m
+[0m[[31merror[0m] [0mimport {RouteConfig, Router, ROUTER_PROVIDERS} from '@angular/router';[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m76 errors found[0m
+[0m[[31merror[0m] [0m(web-assets:[31mtypescript[0m) com.typesafe.sbt.web.CompileProblemsException[0m
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+*******compugain@bbh
+[[31merror[0m] - application - 
+
+! @74dfmh39m - Internal server error, for (POST) [/uploadSwiftFile] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.uploadSwiftFile(Application.java:157)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 61 common frames omitted
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[0m[[0minfo[0m] [0mUpdating {file:/usr/share/conductr/project/BBH_UI/}root...[0m
+[[32msuccess[0m] Compiled in 980ms
+[0m[[0minfo[0m] [0mDone updating.[0m
+[0m[[33mwarn[0m] [0mScala version was updated by one of library dependencies:[0m
+[0m[[33mwarn[0m] [0m	* org.scala-lang:scala-library:(2.11.8, 2.11.7, 2.11.6) -> 2.11.11[0m
+[0m[[33mwarn[0m] [0mTo force scalaVersion, add the following:[0m
+[0m[[33mwarn[0m] [0m	ivyScala := ivyScala.value map { _.copy(overrideScalaVersion = true) }[0m
+[0m[[33mwarn[0m] [0mRun 'evicted' to see detailed eviction warnings[0m
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+*******compugain@bbh
+[[31merror[0m] - application - 
+
+! @74dfnein8 - Internal server error, for (POST) [/uploadSwiftFile] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.uploadSwiftFile(Application.java:157)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 61 common frames omitted
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[[32msuccess[0m] Compiled in 493ms
+[0m[[0minfo[0m] [0mTypescript compiling on 1 source(s)[0m
+[0m[[31merror[0m] [0mtsconfig.json:1: TS6053 File '/usr/share/conductr/project/BBH_UI/typings/index.d.ts' not found.[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/create.component.ts:23: TS2322 Type '""' is not assignable to type 'Validate'.[0m
+[0m[[31merror[0m] [0m    model :  Validate('');[0m
+[0m[[31merror[0m] [0m    ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/create.component.ts:23: TS1005 '=' expected.[0m
+[0m[[31merror[0m] [0m    model :  Validate('');[0m
+[0m[[31merror[0m] [0m                     ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/create.component.ts:25: TS2346 Supplied parameters do not match any signature of call target.[0m
+[0m[[31merror[0m] [0m    upload = new UploadBind();[0m
+[0m[[31merror[0m] [0m             ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/create.component.ts:26: TS2346 Supplied parameters do not match any signature of call target.[0m
+[0m[[31merror[0m] [0m    valModel = new validateSwiftModel();[0m
+[0m[[31merror[0m] [0m               ^[0m
+[0m[[31merror[0m] [0m50 errors found[0m
+[0m[[31merror[0m] [0m(web-assets:[31mtypescript[0m) com.typesafe.sbt.web.CompileProblemsException[0m
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+[[31merror[0m] - application - 
+
+! @74dglkfpo - Internal server error, for (POST) [/uploadSwiftFile] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.uploadSwiftFile(Application.java:157)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 61 common frames omitted
+[[31merror[0m] - application - 
+
+! @74dglo3lg - Internal server error, for (POST) [/uploadSwiftFile] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.uploadSwiftFile(Application.java:157)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 61 common frames omitted
+[[31merror[0m] - application - 
+
+! @74dgm80nf - Internal server error, for (POST) [/parseSwiftMessage] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.parseSwiftMessage(Application.java:610)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(Routes.scala:302)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(Routes.scala:302)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 64 common frames omitted
+[[31merror[0m] - application - 
+
+! @74dgm9agm - Internal server error, for (POST) [/parseSwiftMessage] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.parseSwiftMessage(Application.java:610)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(Routes.scala:302)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(Routes.scala:302)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 64 common frames omitted
+[[31merror[0m] - application - 
+
+! @74dgm9bob - Internal server error, for (POST) [/uploadSwiftFile] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.uploadSwiftFile(Application.java:157)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 61 common frames omitted
+[[31merror[0m] - application - 
+
+! @74dgmjobb - Internal server error, for (POST) [/uploadSwiftFile] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.uploadSwiftFile(Application.java:157)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 61 common frames omitted
+[[31merror[0m] - application - 
+
+! @74dgmo70f - Internal server error, for (POST) [/parseSwiftMessage] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.parseSwiftMessage(Application.java:610)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(Routes.scala:302)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(Routes.scala:302)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 64 common frames omitted
+[[31merror[0m] - application - 
+
+! @74dgmob9p - Internal server error, for (POST) [/parseSwiftMessage] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.parseSwiftMessage(Application.java:610)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(Routes.scala:302)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$5$$anonfun$apply$5.apply(Routes.scala:302)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.mt.mt5xx.MT540["field95P"]->java.util.ArrayList[0]->com.prowidesoftware.swift.model.field.Field95P["bicasBIC"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serializeContents(IndexedListSerializer.java:119)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:79)
+	at com.fasterxml.jackson.databind.ser.impl.IndexedListSerializer.serialize(IndexedListSerializer.java:18)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 64 common frames omitted
+[[31merror[0m] - application - 
+
+! @74dgniim9 - Internal server error, for (POST) [/uploadSwiftFile] ->
+ 
+play.api.http.HttpErrorHandlerExceptions$$anon$1: Execution exception[[RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])]]
+	at play.api.http.HttpErrorHandlerExceptions$.throwableToUsefulException(HttpErrorHandler.scala:293)
+	at play.api.http.DefaultHttpErrorHandler.onServerError(HttpErrorHandler.scala:220)
+	at play.api.GlobalSettings$class.onError(GlobalSettings.scala:160)
+	at play.api.DefaultGlobal$.onError(GlobalSettings.scala:188)
+	at play.api.http.GlobalSettingsHttpErrorHandler.onServerError(HttpErrorHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:100)
+	at play.core.server.netty.PlayRequestHandler$$anonfun$2$$anonfun$apply$1.applyOrElse(PlayRequestHandler.scala:99)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:346)
+	at scala.concurrent.Future$$anonfun$recoverWith$1.apply(Future.scala:345)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at scala.concurrent.impl.CallbackRunnable.executeWithValue(Promise.scala:44)
+	at scala.concurrent.impl.Promise$DefaultPromise.tryComplete(Promise.scala:252)
+	at scala.concurrent.impl.Promise$DefaultPromise.link(Promise.scala:308)
+	at scala.concurrent.impl.Promise$DefaultPromise.linkRootOf(Promise.scala:293)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:255)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:251)
+	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:36)
+	at akka.dispatch.BatchingExecutor$AbstractBatch.processBatch(BatchingExecutor.scala:55)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply$mcV$sp(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at akka.dispatch.BatchingExecutor$BlockableBatch$$anonfun$run$1.apply(BatchingExecutor.scala:91)
+	at scala.concurrent.BlockContext$.withBlockContext(BlockContext.scala:72)
+	at akka.dispatch.BatchingExecutor$BlockableBatch.run(BatchingExecutor.scala:90)
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:39)
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:415)
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260)
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339)
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979)
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107)
+Caused by: java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:361)
+	at play.mvc.Results.status(Results.java:147)
+	at play.mvc.Results.status(Results.java:113)
+	at play.mvc.Results.ok(Results.java:536)
+	at controllers.Application.uploadSwiftFile(Application.java:157)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at router.Routes$$anonfun$routes$1$$anonfun$applyOrElse$4$$anonfun$apply$4.apply(Routes.scala:296)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:157)
+	at play.core.routing.HandlerInvokerFactory$$anon$4.resultCall(HandlerInvoker.scala:156)
+	at play.core.routing.HandlerInvokerFactory$JavaActionInvokerFactory$$anon$14$$anon$3$$anon$1.invocation(HandlerInvoker.scala:136)
+	at play.core.j.JavaAction$$anon$1.call(JavaAction.scala:73)
+	at play.http.HttpRequestHandler$1.call(HttpRequestHandler.java:54)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at play.core.j.JavaAction$$anonfun$7.apply(JavaAction.scala:108)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24)
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24)
+	at play.core.j.HttpExecutionContext$$anon$2.run(HttpExecutionContext.scala:56)
+	at play.api.libs.iteratee.Execution$trampoline$.execute(Execution.scala:70)
+	at play.core.j.HttpExecutionContext.execute(HttpExecutionContext.scala:48)
+	at scala.concurrent.impl.Future$.apply(Future.scala:31)
+	at scala.concurrent.Future$.apply(Future.scala:494)
+	at play.core.j.JavaAction.apply(JavaAction.scala:108)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5$$anonfun$apply$6.apply(Action.scala:112)
+	at play.utils.Threads$.withContextClassLoader(Threads.scala:21)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:111)
+	at play.api.mvc.Action$$anonfun$apply$2$$anonfun$apply$5.apply(Action.scala:110)
+	at scala.Option.map(Option.scala:146)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:110)
+	at play.api.mvc.Action$$anonfun$apply$2.apply(Action.scala:103)
+	at scala.concurrent.Future$$anonfun$flatMap$1.apply(Future.scala:253)
+	... 14 common frames omitted
+Caused by: com.fasterxml.jackson.databind.JsonMappingException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead. (through reference chain: com.prowidesoftware.swift.model.SwiftMessage["block1"]->com.prowidesoftware.swift.model.SwiftBlock1["bic"]->com.prowidesoftware.swift.model.BIC["bic"])
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:379)
+	at com.fasterxml.jackson.databind.JsonMappingException.wrapWithPath(JsonMappingException.java:339)
+	at com.fasterxml.jackson.databind.ser.std.StdSerializer.wrapAndThrow(StdSerializer.java:342)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:686)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:672)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	at com.fasterxml.jackson.databind.ser.BeanSerializer.serialize(BeanSerializer.java:157)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:366)
+	at com.fasterxml.jackson.databind.node.POJONode.serialize(POJONode.java:112)
+	at com.fasterxml.jackson.databind.node.ObjectNode.serialize(ObjectNode.java:293)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:49)
+	at com.fasterxml.jackson.databind.ser.std.SerializableSerializer.serialize(SerializableSerializer.java:27)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:130)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2444)
+	at play.mvc.StatusHeader.sendJson(StatusHeader.java:357)
+	... 44 common frames omitted
+Caused by: java.lang.UnsupportedOperationException: The API BIC#getBic() is deprecated. Use getBic8() or getBic11() instead.
+	at com.prowidesoftware.deprecation.DeprecationUtils.phase3(SourceFile:81)
+	at com.prowidesoftware.swift.model.BIC.getBic(SourceFile:101)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField(BeanPropertyWriter.java:633)
+	at com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields(BeanSerializerBase.java:678)
+	... 61 common frames omitted
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[[32msuccess[0m] Compiled in 447ms
+[0m[[0minfo[0m] [0mTypescript compiling on 26 source(s)[0m
+[0m[[31merror[0m] [0mtsconfig.json:1: TS6053 File '/usr/share/conductr/project/BBH_UI/typings/index.d.ts' not found.[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:8: TS2307 Cannot find module 'ng2-bootstrap'.[0m
+[0m[[31merror[0m] [0mimport { ModalModule,AlertModule,DatepickerModule} from 'ng2-bootstrap';[0m
+[0m[[31merror[0m] [0m                                                        ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:9: TS2305 Module '"/usr/share/conductr/project/BBH_UI/target/web/node-modules/main/webjars/ng2-pagination/index"' has no exported member 'PaginationControlsCmp'.[0m
+[0m[[31merror[0m] [0mimport { Ng2PaginationModule,PaginatePipe, PaginationControlsCmp, PaginationService} from 'ng2-pagination';[0m
+[0m[[31merror[0m] [0m                                           ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:10: TS2305 Module '"/usr/share/conductr/project/BBH_UI/target/web/node-modules/main/webjars/@angular/router/index"' has no exported member 'RouteConfig'.[0m
+[0m[[31merror[0m] [0mimport {RouteConfig, Router, ROUTER_PROVIDERS} from '@angular/router';[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:10: TS2305 Module '"/usr/share/conductr/project/BBH_UI/target/web/node-modules/main/webjars/@angular/router/index"' has no exported member 'ROUTER_PROVIDERS'.[0m
+[0m[[31merror[0m] [0mimport {RouteConfig, Router, ROUTER_PROVIDERS} from '@angular/router';[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m76 errors found[0m
+[0m[[31merror[0m] [0m(web-assets:[31mtypescript[0m) com.typesafe.sbt.web.CompileProblemsException[0m
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+*******compugain@bbh
+*******compugain@bbh
+[[32msuccess[0m] Compiled in 227ms
+[[32msuccess[0m] Compiled in 98ms
+[[32msuccess[0m] Compiled in 104ms
+[[32msuccess[0m] Compiled in 100ms
+[0m[[0minfo[0m] [0mCompiling 1 Java source to /usr/share/conductr/project/BBH_UI/target/scala-2.11/classes...[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Application.java: /usr/share/conductr/project/BBH_UI/app/controllers/Application.java uses or overrides a deprecated API.[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Application.java: Recompile with -Xlint:deprecation for details.[0m
+[[32msuccess[0m] Compiled in 1s
+[[32msuccess[0m] Compiled in 132ms
+[[32msuccess[0m] Compiled in 109ms
+[[32msuccess[0m] Compiled in 98ms
+[0m[[0minfo[0m] [0mCompiling 1 Java source to /usr/share/conductr/project/BBH_UI/target/scala-2.11/classes...[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Application.java: /usr/share/conductr/project/BBH_UI/app/controllers/Application.java uses or overrides a deprecated API.[0m
+[0m[[0minfo[0m] [0m/usr/share/conductr/project/BBH_UI/app/controllers/Application.java: Recompile with -Xlint:deprecation for details.[0m
+[[32msuccess[0m] Compiled in 488ms
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+
+[35m--- (RELOAD) ---[0m
+
+[0m[[0minfo[0m] [0mLoading project definition from /usr/share/conductr/project/BBH_UI/project[0m
+[0m[[0minfo[0m] [0mSet current project to play-angular2-typescript (in build file:/usr/share/conductr/project/BBH_UI/)[0m
+
+[35m--- (Running the application, auto-reloading is enabled) ---[0m
+
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.1.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/root/.ivy2/cache/org.slf4j/slf4j-log4j12/jars/slf4j-log4j12-1.7.21.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [ch.qos.logback.classic.util.ContextSelectorStaticBinder]
+[[37minfo[0m] p.c.s.NettyServer - Listening for HTTP on /0:0:0:0:0:0:0:0:8585
+
+[32m(Server started, use Ctrl+D to stop and go back to the console...)[0m
+
+[[32msuccess[0m] Compiled in 422ms
+[0m[[0minfo[0m] [0mTypescript compiling on 26 source(s)[0m
+[0m[[31merror[0m] [0mtsconfig.json:1: TS6053 File '/usr/share/conductr/project/BBH_UI/typings/index.d.ts' not found.[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:8: TS2307 Cannot find module 'ng2-bootstrap'.[0m
+[0m[[31merror[0m] [0mimport { ModalModule,AlertModule,DatepickerModule} from 'ng2-bootstrap';[0m
+[0m[[31merror[0m] [0m                                                        ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:9: TS2305 Module '"/usr/share/conductr/project/BBH_UI/target/web/node-modules/main/webjars/ng2-pagination/index"' has no exported member 'PaginationControlsCmp'.[0m
+[0m[[31merror[0m] [0mimport { Ng2PaginationModule,PaginatePipe, PaginationControlsCmp, PaginationService} from 'ng2-pagination';[0m
+[0m[[31merror[0m] [0m                                           ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:10: TS2305 Module '"/usr/share/conductr/project/BBH_UI/target/web/node-modules/main/webjars/@angular/router/index"' has no exported member 'RouteConfig'.[0m
+[0m[[31merror[0m] [0mimport {RouteConfig, Router, ROUTER_PROVIDERS} from '@angular/router';[0m
+[0m[[31merror[0m] [0m        ^[0m
+[0m[[31merror[0m] [0m/usr/share/conductr/project/BBH_UI/app/assets/app/app.module.ts:10: TS2305 Module '"/usr/share/conductr/project/BBH_UI/target/web/node-modules/main/webjars/@angular/router/index"' has no exported member 'ROUTER_PROVIDERS'.[0m
+[0m[[31merror[0m] [0mimport {RouteConfig, Router, ROUTER_PROVIDERS} from '@angular/router';[0m
+[0m[[31merror[0m] [0m                             ^[0m
+[0m[[31merror[0m] [0m76 errors found[0m
+[0m[[31merror[0m] [0m(web-assets:[31mtypescript[0m) com.typesafe.sbt.web.CompileProblemsException[0m
+[0m[[0minfo[0m] [0mExporting web-assets:play-angular2-typescript[0m
+[[37minfo[0m] - play.api.Play - Application started (Dev)
+*******compugain@bbh
+*******compugain@bbh
+*******compugain@bbh
+*******compugain@bbh
+*******compugain@bbh

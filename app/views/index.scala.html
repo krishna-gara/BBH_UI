@@ -1,0 +1,128 @@
+@()
+<!doctype html>
+<html lang="en" data-framework="angular2">
+    <head>
+        <base href="/" />
+        @* In this version of the application the typescript compilation is done by the play framework.
+           The browser downloads .js files. *@
+        <meta charset="utf-8">
+        <title> BBH</title>
+      <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/bootstrap.min.css")" media="screen">
+      <link rel="stylesheet" href="@routes.Assets.versioned("stylesheets/main.css")" media="screen">
+      <style>
+       .alert{
+          padding: 6px;
+       }
+        .red-border-class {
+            border-radius: 5px !important;
+            border-left-color: #e51937;
+            border-left-width: 5px;
+            border-bottom-color: #e51937;
+            border-bottom-width: 1px;
+        }
+        .green-border-class {
+          border-radius: 5px !important;
+          border-left-color: #009688;
+          border-left-width: 5px;
+          border-bottom-color: #009688;
+        }
+        .col-xs-3 {
+          width: 33%;
+        }
+        .btn{
+          padding:5px 10px;
+          font-size: 12px;
+        }
+        .nav>li>a{
+          padding: 7px 13px;
+        }
+      </style>
+        <script type='text/javascript' src='@routes.Assets.versioned("lib/systemjs/dist/system-polyfills.js")'></script>
+        <script type='text/javascript' src='@routes.Assets.versioned("lib/core-js/client/shim.min.js")'></script>
+        <script type='text/javascript' src='@routes.Assets.versioned("lib/zone.js/dist/zone.js")'></script>
+        <script type='text/javascript' src='@routes.Assets.versioned("lib/reflect-metadata/Reflect.js")'></script>
+        <script type='text/javascript' src='@routes.Assets.versioned("lib/systemjs/dist/system.src.js")'></script>
+
+        <script>    @* our app is downloaded as individual javascript files by SystemJs
+                     after compilation by sbt-typescript*@
+            var map = {
+                'app': 'assets/app',
+                '@@angular':'assets/lib/@@angular',
+                'rxjs':'assets/lib/rxjs',
+                'symbol-observable': 'assets/lib/symbol-observable',
+				        'ng2-bootstrap': 'assets/lib/ng2-bootstrap',
+				        'ng2-pagination':'assets/lib/ng2-pagination',
+
+            };
+
+
+        var packages = {
+                'app': {main: 'main.js', defaultExtension: 'js'},
+                'rxjs': {defaultExtension: 'js'},
+                'assets/lib': {defaultExtension: 'js'},
+                'symbol-observable': {defaultExtension: 'js', main: 'index.js'},
+                'ng2-bootstrap': {defaultExtension: 'js', main: 'bundles/ngx-bootstrap.umd.js'},
+                'ng2-pagination':{ defaultExtension: 'js', main: 'dist/ng2-pagination.js' }
+
+            };
+        var ngPackageNames = [
+                'common',
+                'compiler',
+                'core',
+                'forms',
+                'router',
+                'http',
+                'platform-browser',
+                'platform-browser-dynamic',
+                'router'
+            ];
+
+        function packIndex(pkgName) {
+          packages['@@angular/'+pkgName] = { main: 'index.js', defaultExtension: 'js' };
+        }
+        function packUmd(pkgName) {
+          packages['@@angular/'+pkgName] = { main: '/bundles/' + pkgName + '.umd.js', defaultExtension: 'js' };
+        }
+          // Most environments should use UMD; some (Karma) need the individual index files
+        function addAngularModulesToMap(pkgName) {
+          map['@@angular/'+pkgName] = 'assets/lib/angular__' + pkgName;
+        }
+
+          // Add package entries for angular packages
+        var setPackageConfig = System.packageWithIndex ? packIndex : packUmd;
+        ngPackageNames.forEach(setPackageConfig);
+
+          // Add map entries for angular packages
+        ngPackageNames.forEach(function(pkgName){
+           addAngularModulesToMap(pkgName)
+        });
+
+        System.config({
+            map : map,
+            packages: packages
+        });
+        @* SystemJs works out which other modules our app module depends on and will download and load them*@
+        System.import('app')
+            .catch(console.error.bind(console));
+
+		</script>
+    </head>
+    <body>
+      <div class="container-fluid padding0">
+          <div class="col-sm-12 padding0">
+        <base href="/">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header pull-left"><a class="navbar-brand" href="#">
+			<img class="img-responsive" src="@routes.Assets.versioned("images/bbh-logo-data.png")"></img>
+			</a>
+            </div>
+        </nav>
+        <div class="col-sm-12 padding15t pageContainer">
+            <my-app>Loading...</my-app>
+			</div>
+        </div>
+        </div>
+    </div>
+   </body>
+
+</html>

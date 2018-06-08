@@ -1,0 +1,102 @@
+body{
+  margin:0;
+  font-size:12px;
+  font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  background:#eee;
+}
+.padding0{padding:0px;}
+.padding15t{padding-top:15px;}
+.nav-tabs
+{
+ 
+border-color:#ddd;
+ 
+}
+ 
+.nav-tabs > li a {
+ 
+border: 1px solid #ccc;
+ 
+background-color:#ddd;
+ 
+color:#333;
+border-bottom:0px;
+margin-bottom:-1px;
+ 
+}
+.nav-tabs > li a.logout{background:#ddd; border:0px;}
+.nav-tabs > li a.logout:hover{background:#ccc;}
+.nav-tabs > li a:hover {background-color:#ddd;}
+
+.navbar-default{background:linear-gradient(#828180, #2c2b29); border-radius:0px;}
+.navbar{ margin-bottom:5px!important;} 
+ 
+.nav-tabs > li.active > a,
+ 
+.nav-tabs > li.active > a:focus,
+ 
+.nav-tabs > li.active > a:hover{
+ 
+background-color:#2c2b29;
+ 
+color:white;
+ 
+border: 1px solid #ccc;
+ 
+border-bottom-color: transparent;
+cursor:pointer;
+ 
+}
+ label{font-weight:normal;}
+.pageContainer .form-control{border:1px solid #eee;}
+.pageContainer .PagetabData{border:1px solid #ddd; padding:5px 20px; background:#fff; background:#fff;}
+.graybtn{background:#2c2b29; border:0px;}
+.graybtn:hover{background:#545351;}
+ 
+fieldset.scheduler-border {
+    border: 1px solid #ddd !important;
+    padding: 0 1.3em 1.3em 1.3em !important;
+    margin: 15px 0 15px 0 !important;
+    -webkit-box-shadow:  0px 0px 0px 0px #000;
+            box-shadow:  0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    width:inherit; /* Or auto */
+    padding:0 1px; /* To give a bit of padding on the left and right */
+    border-bottom:none;
+}
+.pagination{
+ margin:5px!important; 
+ padding:0px;
+ background-color: black;
+}
+.page-link{
+  background-color:#333!important;
+}
+.form-control{
+  height:30px;
+}
+
+.form-group{
+  margin-bottom: 4px!important;
+}
+legend{
+ font-size:15px; font-weight: bold;
+ margin-bottom: 9px;
+}
+.row{padding:1px;}
+.padding0{padding:0px!important;}
+.input-group-addon{padding: 6px 11px;}
+
+tbody > tr > td {height:25px!important}
+
+#fileselector {
+    margin: 10px; 
+}
+#uploadfilemsg {
+    display:none;   
+}
+.margin-correction {
+    margin-right: 10px;   
+}

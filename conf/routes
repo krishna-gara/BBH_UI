@@ -1,0 +1,19 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /                           controllers.Application.login
+POST    /authenticate               controllers.Login.authenticate
+GET     /dashboard                  controllers.Application.index
+POST    /uploadSwiftFile            controllers.Application.uploadSwiftFile
+POST    /parseSwiftMessage          controllers.Application.parseSwiftMessage
+POST    /createSwiftMessage         controllers.Application.createSwiftMessage
+POST    /validateSwiftMessage       controllers.Application.validateSwiftMessage
+POST    /searchQuery                controllers.Application.searchQuery
+GET		/processEvents				controllers.Application.processDetails
+GET     /logout                     controllers.Login.logout
+
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+GET     /favicon.ico    controllers.Assets.at(path="/public/images", file="bbh-usa-page-favicon.ico")
+

@@ -1,0 +1,15 @@
+WARN: No sbt.version set in project/build.properties, base directory: /usr/share/conductr/project/BBH_UI/lib
+[0m[[0minfo[0m] [0mSet current project to lib (in build file:/usr/share/conductr/project/BBH_UI/lib/)[0m
+[0m[[0minfo[0m] [0mUpdating {file:/usr/share/conductr/project/BBH_UI/lib/}lib...[0m
+[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-compiler;2.10.6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#scala-reflect;2.10.6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.scala-lang#jline;2.10.6 ...[0m
+[A[2K[0m[[0minfo[0m] [0mResolving org.fusesource.jansi#jansi;1.4 ...[0m
+[0m[[0minfo[0m] [0mDone updating.[0m
+java.lang.RuntimeException: No main class detected.
+	at scala.sys.package$.error(package.scala:27)
+[0m[[31mtrace[0m] [0mStack trace suppressed: run [34mlast compile:run[0m for the full output.[0m
+[0m[[31merror[0m] [0m(compile:[31mrun[0m) No main class detected.[0m
+[0m[[31merror[0m] [0mTotal time: 1 s, completed Jun 22, 2017 8:58:45 AM[0m
+1. Waiting for source changes... (press enter to interrupt)
