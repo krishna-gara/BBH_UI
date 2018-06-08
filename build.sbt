@@ -1,8 +1,6 @@
-import com.typesafe.sbt.packager.archetypes.JavaAppPackaging
-
 name := """play-angular2-typescript"""
 version := "0.2.0-beta.7"
-lazy val root = (project in file(".")).enablePlugins(PlayScala,JavaServerAppPackaging)
+lazy val root = (project in file(".")).enablePlugins(PlayScala)
 scalaVersion := "2.11.8"
 incOptions := incOptions.value.withNameHashing(true)
 updateOptions := updateOptions.value.withCachedResolution(cachedResoluton = true)
@@ -43,7 +41,6 @@ libraryDependencies ++= {
   )
 }
 dependencyOverrides += "org.webjars.npm" % "minimatch" % "3.0.0"
-libraryDependencies += "com.typesafe.sbt" % "sbt-launcher" % "0.13.6"
 typingsFile := Some(baseDirectory.value / "typings" / "index.d.ts")
 // use the webjars npm directory (target/web/node_modules ) for resolution of module imports of angular2/core etc
 resolveFromWebjarsNodeModulesDir := true
