@@ -1,5 +1,6 @@
 FROM java:latest
 CMD ["sbt","dist"]
-CMD ["sbt","docker:publishLocal"]
-CMD "sbt","run"]
-CMD []
+CMD ["sbt","publishLocal"]
+ENTRYPOINT bash
+EXPOSE 9000
+CMD ["sbt","run"]
