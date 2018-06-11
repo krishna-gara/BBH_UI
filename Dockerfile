@@ -1,7 +1,7 @@
 FROM java:latest
-RUN /sbin/apk add --no-cache bash
 WORKDIR /opt/docker
-ADD --chown=daemon:daemon opt /opt
+ADD opt /opt
+RUN ["chown", "-R", "daemon:daemon", "."]
 USER daemon
-ENTRYPOINT []
+ENTRYPOINT ["bin/play-angular2-typescript"]
 CMD []
