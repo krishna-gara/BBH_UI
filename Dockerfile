@@ -1,6 +1,7 @@
 FROM java:latest
-CMD ["sbt","dist"]
-CMD ["sbt","publishLocal"]
-ENTRYPOINT bash
-EXPOSE 9000
-CMD ["sbt","run"]
+WORKDIR /opt/docker
+ADD opt /opt
+RUN ["chown", "-R", "daemon:daemon", "."]
+USER daemon
+ENTRYPOINT ["bin/play-angular2-typescript"]
+CMD []
