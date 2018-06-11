@@ -1,3 +1,5 @@
 FROM java:latest
-ENTRYPOINT ["BBH/target/scala-2.11/play-angular2-typescript_2.11-0.2.0-beta.7"]
+RUN ["chown", "-R", "daemon:daemon", "."]
+CMD ["sbt","dist"]
+CMD ["sbt","docker:publishLocal"]
 CMD []
