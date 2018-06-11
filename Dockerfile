@@ -1,7 +1,3 @@
 FROM java:latest
-WORKDIR /opt/docker
-ADD opt /opt
-RUN ["chown", "-R", "daemon:daemon", "."]
-USER daemon
-ENTRYPOINT ["bin/play-angular2-typescript"]
+ENTRYPOINT ["BBH_UI/target/scala-2.11/play-angular2-typescript_2.11-0.2.0-beta.7"]
 CMD []
