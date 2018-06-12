@@ -1,6 +1,6 @@
 
 // The Play plugin
-addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.10")
+addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.6.0")
 
 // provides server side compilation of typescript to ecmascript 5 or 3
 addSbtPlugin("name.de-vries" % "sbt-typescript" % "0.3.0-beta.11")
@@ -15,5 +15,5 @@ addSbtPlugin("net.virtual-void" % "sbt-dependency-graph" % "0.8.2")
 
 //addSbtPlugin("com.typesafe.sbt" % "sbt-js-engine" % "1.1.4")
 //addSbtPlugin("com.typesafe.sbt" % "sbt-web" % "1.4.0")
-addSbtPlugin("com.lightbend.conductr" % "sbt-conductr" % "2.3.4")
+//addSbtPlugin("com.lightbend.conductr" % "sbt-conductr" % "2.3.4")
 //lazy val root = (project in file(".")).enablePlugins(JavaAppPackaging)
