@@ -46,23 +46,4 @@ typingsFile := Some(baseDirectory.value / "typings" / "index.d.ts")
 resolveFromWebjarsNodeModulesDir := true
 routesGenerator := InjectedRoutesGenerator
 
-javaOptions in Universal ++= Seq(
-  // JVM memory tuning
-  "-J-Xmx1024m",
-  "-J-Xms128m",
-  // Since play uses separate pidfile we have to provide it with a proper path
-  // name of the pid file must be play.pid
-  s"-Dpidfile.path=/opt/docker/${packageName.value}/run/play.pid"
-)
-import com.typesafe.sbt.packager.docker.{ExecCmd, Cmd}
-
-dockerCommands ++= Seq(
-  ExecCmd("RUN", "mkdir", s"/opt/docker/${packageName.value}"),
-  ExecCmd("RUN", "mkdir", s"/opt/docker/${packageName.value}/run"),
-  ExecCmd("RUN", "chown", "-R", "daemon:daemon", s"/opt/docker/${packageName.value}/")
-)
-
-
-
-// exposing the play ports
-dockerExposedPorts in Docker := Seq(9000, 9443)
+javacOptions ++= Seq("-Xlint:unchecked")
