@@ -1,6 +1,7 @@
 name := """play-angular2-typescript"""
 version := "0.2.0-beta.7"
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
+lazy val root = (project in file(".")).enablePlugins(PlayScala).enablePlugins(JavaAppPackaging)
+
 scalaVersion := "2.11.8"
 incOptions := incOptions.value.withNameHashing(true)
 updateOptions := updateOptions.value.withCachedResolution(cachedResoluton = true)
@@ -45,5 +46,3 @@ typingsFile := Some(baseDirectory.value / "typings" / "index.d.ts")
 // use the webjars npm directory (target/web/node_modules ) for resolution of module imports of angular2/core etc
 resolveFromWebjarsNodeModulesDir := true
 routesGenerator := InjectedRoutesGenerator
-
-javacOptions ++= Seq("-encoding","utf8","-g","-Xlint:deprecated")
