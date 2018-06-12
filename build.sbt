@@ -46,4 +46,4 @@ typingsFile := Some(baseDirectory.value / "typings" / "index.d.ts")
 resolveFromWebjarsNodeModulesDir := true
 routesGenerator := InjectedRoutesGenerator
 
-javacOptions ++= Seq("-Xlint:unchecked")
+javacOptions ++= Seq("-encoding","utf8","-g","-Xlint:unchecked")
